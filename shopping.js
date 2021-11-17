@@ -54,8 +54,15 @@ function addToShoppingList(array, item, price) {
 
 addToShoppingList(list, "potatoes", 4);
 addToShoppingList(list, "limes", 4);
-addToShoppingList(list, "soda", 5);
-addToShoppingList(list, "watermelon", 6);
+addToShoppingList(list, "soda", 10);
+addToShoppingList(list, "watermelon", 15);
 addToShoppingList(list, "mustard", 7);
 
 console.log(list);
+
+console.log("Items that cost more than $8 are:")
+for (const item of list) {
+    if (item.price > 8) {
+        console.log(item.name);
+    }
+}
