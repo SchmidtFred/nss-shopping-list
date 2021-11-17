@@ -46,8 +46,16 @@ function addToShoppingList(array, item, price) {
         price: price,
         dateCreated: new Date()
     }
+
+    array.push(item);
+
     return item;
 }
 
-const test = addToShoppingList(list, "potatoes", 4);
-console.log(test);
+addToShoppingList(list, "potatoes", 4);
+addToShoppingList(list, "limes", 4);
+addToShoppingList(list, "soda", 5);
+addToShoppingList(list, "watermelon", 6);
+addToShoppingList(list, "mustard", 7);
+
+console.log(list);
